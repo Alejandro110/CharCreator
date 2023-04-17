@@ -1,0 +1,8 @@
+const readline= require ('readline-sync')
+readline.question('enter a verb')
+readline.question('enter a verb')
+readline.question('enter a verb')
+readline.question('enter a verb')
+readline.question('enter a verb')
+readline.question('enter a verb')
+readline.question('')
