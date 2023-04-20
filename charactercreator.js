@@ -44,13 +44,21 @@ function createChar(character,list) {
     console.log("Rolling STR")
     character.constitution = rollStat(dicerolled);
     console.log("Rolling STR")
-    character.integrity = rollStat(dicerolled);
+    character.intelligence = rollStat(dicerolled);
     console.log("Rolling STR")
     character.wisdom = rollStat(dicerolled);
     console.log("Rolling STR")
     character.charisma = rollStat(dicerolled);
     console.log(character);
+    character.weapon = rollStat(dicerolled);
+    console.log(character);
+    character.luck = rollStat(dicerolled);
+    console.log(character);
+    character.speed = rollStat(dicerolled);
+    displayChar(character);
 }
+
+function displayChar(char){
 console.log(`Name: ${char.name}`);
 console.log(`STR: ${char.strength}`);
 console.log(`DEX: ${char.dexterity}`);
@@ -58,5 +66,7 @@ console.log(`CON: ${char.constitution}`);
 console.log(`INT: ${char.intelligence}`);
 console.log(`WIS: ${char.wisdom}`);
 console.log(`CHA: ${char.charisma}`);
-
+console.log(`WPN: ${char.weapon}`);
+console.log(`LUC: ${char.luck}`);
+console.log(`SPD: ${char.speed}`);
 }
